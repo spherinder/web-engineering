@@ -5,6 +5,7 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Document</title>
+    <link href="default.css" rel="stylesheet" />
     <link href="layout.css" rel="stylesheet" />
 
     <script src="./main.ts" type="module"></script>
@@ -40,7 +41,37 @@
     </section>
 
     <main>
-<!--      TODO add form here-->
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Doe">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="jane.doe@example.com">
+        <label for="bday">Birthday</label>
+        <input type="date" id="bday" name="bday">
+
+        <label>What do you like the most?</label>
+        <div>
+          <input type="radio" id="js" name="fav_language" value="JS">
+            <label for="js">JavaScript</label><br>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+          <input type="radio" id="idk" name="fav_language" value="idk">
+            <label for="idk">Can not make a decision</label><br>
+        </div>
+
+        <label for="message">Your message</label>
+        <div>
+          <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here"></textarea><br>
+
+          <input type="checkbox" id="notif" name="notif" value="notif">
+          <label for="notif">Yes, I want to receive your very important spam messages!</label><br>
+
+          <input type="submit" id="subm" value="Submit">
+          <input type="reset" id="reset" value="Reset">
+        </div>
+      </form>
     </main>
 
     <footer>

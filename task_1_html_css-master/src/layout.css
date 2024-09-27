@@ -54,6 +54,10 @@ body > main {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  & > form {
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
 }
 
 body > footer {
